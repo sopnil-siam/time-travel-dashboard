@@ -37,6 +37,7 @@
     background: #000016;
     padding: 1rem 0;
     border-top: 1px solid #00ffff33;
+    margin-left: 0;
   }
 
   .nav-links li {
@@ -47,6 +48,11 @@
   .nav-toggle {
     display: block;
     margin-left: auto;
+    font-size: 2rem;
+    background: none;
+    border: none;
+    color: #00ffff;
+    cursor: pointer;
   }
 
   .dashboard-header h1 {
@@ -133,5 +139,20 @@
   .log-table td {
     padding: 0.6rem;
     font-size: 0.85rem;
+  }
+}
+
+/* 📱 NAVBAR TOGGLE ACTIVE STATE (MOBILE VIEW) */
+.nav-links.active {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding: 1rem 0;
+}
+
+@media (max-width: 768px) {
+  .log-table {
+    overflow-x: auto;
+    display: block;
   }
 }
