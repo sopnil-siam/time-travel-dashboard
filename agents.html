@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Agents – Time Authority</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="responsive.css">
+</head>
+<body>
+  <header class="dashboard-header">
+    <h1>🧑‍🚀 TIME AGENT ROSTER</h1>
+    <p class="subtext">Authorized Travelers Only</p>
+  </header>
+
+<nav class="main-nav">
+  <div class="nav-container">
+    <div class="logo">⏳ Time Travel</div>
+    <button class="nav-toggle" aria-label="Toggle navigation">
+      ☰
+    </button>
+    <ul class="nav-links">
+      <li><a href="index.html" class="active">Dashboard</a></li>
+      <li><a href="logs.html">Mission Logs</a></li>
+      <li><a href="agents.html">Agents</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<script>
+const toggleBtn = document.querySelector(".nav-toggle");
+const navLinks = document.querySelector(".nav-links");
+
+toggleBtn.addEventListener("click", () => {
+  navLinks.classList.toggle("active");
+});
+
+</script>
+
+
+  <main class="dashboard-main">
+    <section class="agents-section">
+      <h2>🛰 Active Agents</h2>
+      <div class="agent-grid">
+        <div class="agent-card">
+          <h3>Agent Nova</h3>
+          <p><strong>Codename:</strong> N-09</p>
+          <p><strong>Specialty:</strong> Future Interventions</p>
+          <p><strong>Last Mission:</strong> 3021</p>
+        </div>
+
+        <div class="agent-card">
+          <h3>Agent Vortex</h3>
+          <p><strong>Codename:</strong> V-88</p>
+          <p><strong>Specialty:</strong> Prehistoric Recon</p>
+          <p><strong>Last Mission:</strong> 1500 BC</p>
+        </div>
+
+        <div class="agent-card">
+          <h3>Agent Echo</h3>
+          <p><strong>Codename:</strong> E-42</p>
+          <p><strong>Specialty:</strong> Temporal Diplomacy</p>
+          <p><strong>Last Mission:</strong> 2022</p>
+        </div>
+
+        <div class="agent-card">
+          <h3>Agent Sopnil</h3>
+          <p><strong>Codename:</strong> S-01</p>
+          <p><strong>Specialty:</strong> Multiverse Research</p>
+          <p><strong>Last Mission:</strong> Classified</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="dashboard-footer">
+    <p>Time Authority © 2099 – Eyes Everywhere</p>
+  </footer>
+</body>
+</html>

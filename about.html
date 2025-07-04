@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About – Time Authority</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="responsive.css">
+</head>
+<body>
+  <header class="dashboard-header">
+    <h1>🧠 TIME AUTHORITY</h1>
+    <p class="subtext">Guardians of the Timeline</p>
+  </header>
+
+
+<nav class="main-nav">
+  <div class="nav-container">
+    <div class="logo">⏳ Time Travel</div>
+    <button class="nav-toggle" aria-label="Toggle navigation">
+      ☰
+    </button>
+    <ul class="nav-links">
+      <li><a href="index.html" class="active">Dashboard</a></li>
+      <li><a href="logs.html">Mission Logs</a></li>
+      <li><a href="agents.html">Agents</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<script>
+const toggleBtn = document.querySelector(".nav-toggle");
+const navLinks = document.querySelector(".nav-links");
+
+toggleBtn.addEventListener("click", () => {
+  navLinks.classList.toggle("active");
+});
+
+</script>
+
+
+  <main class="dashboard-main about-main">
+    <section class="origin-story">
+      <h2>Our Mission</h2>
+      <p>
+        The Time Authority was established in 2077 to safeguard the integrity of the timeline and prevent paradoxes.
+        Our agents operate across centuries to ensure history unfolds as it should, while exploring the multiverse possibilities.
+      </p>
+    </section>
+
+    <section class="time-rules">
+      <h2>Rules of Time Travel</h2>
+      <ul>
+        <li>Never interfere with major historical events.</li>
+        <li>Do not create paradoxes or alternate realities.</li>
+        <li>Report all mission anomalies immediately.</li>
+        <li>Maintain secrecy and protect agency identities.</li>
+      </ul>
+    </section>
+
+    <section class="project-info">
+      <h2>About This Project</h2>
+      <p>
+        This Time Travel Dashboard UI is a fictional interface designed by <strong>Agent Sopnil</strong> using pure HTML and CSS.
+        It demonstrates futuristic design, animations, and responsive layout — a showcase for advanced front-end skills.
+      </p>
+    </section>
+  </main>
+
+  <footer class="dashboard-footer">
+    <p>Time Authority © 2099 – Temporal Peacekeepers</p>
+  </footer>
+</body>
+</html>

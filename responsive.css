@@ -1,0 +1,137 @@
+/* 📱 PERFECT RESPONSIVE MEDIA QUERIES */
+
+/* For Tablets (max-width: 992px) */
+@media (max-width: 992px) {
+  .dashboard-main {
+    padding: 1.5rem;
+  }
+
+  .nav-container {
+    gap: 1.5rem;
+    padding-left: 1rem;
+  }
+
+  .nav-links {
+    gap: 1.5rem;
+    margin-left: 3rem;
+  }
+
+  .button-grid {
+    grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+  }
+
+  .agent-grid {
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  }
+}
+
+/* For Mobile Devices (max-width: 768px) */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    background: #000016;
+    padding: 1rem 0;
+    border-top: 1px solid #00ffff33;
+  }
+
+  .nav-links li {
+    text-align: center;
+    padding: 0.8rem 0;
+  }
+
+  .nav-toggle {
+    display: block;
+    margin-left: auto;
+  }
+
+  .dashboard-header h1 {
+    font-size: 1.7rem;
+  }
+
+  .subtext {
+    font-size: 0.9rem;
+  }
+
+  .button-grid {
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 0.8rem;
+  }
+
+  .agent-grid {
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 1rem;
+  }
+
+  .destination-form {
+    gap: 0.8rem;
+  }
+
+  .current-time {
+    font-size: 1.1rem;
+    padding: 0.8rem;
+  }
+
+  .travel-btn {
+    font-size: 1rem;
+    padding: 0.8rem;
+  }
+}
+
+/* For Small Mobile Devices (max-width: 480px) */
+@media (max-width: 480px) {
+  .dashboard-header {
+    padding: 1.5rem;
+  }
+
+  .dashboard-header h1 {
+    font-size: 1.4rem;
+  }
+
+  .nav-container {
+    padding: 0.5rem 1rem;
+  }
+
+  .nav-links li {
+    padding: 0.6rem 0;
+  }
+
+  .button-grid {
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  }
+
+  .agent-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .logs-section, 
+  .agents-section,
+  .destination-section,
+  .about-main, 
+  .contact-section {
+    padding: 1rem;
+  }
+
+  .dashboard-main {
+    padding: 1rem;
+  }
+
+  .travel-btn {
+    font-size: 0.95rem;
+    padding: 0.7rem;
+  }
+
+  .current-time {
+    font-size: 1rem;
+  }
+
+  .log-table th, 
+  .log-table td {
+    padding: 0.6rem;
+    font-size: 0.85rem;
+  }
+}

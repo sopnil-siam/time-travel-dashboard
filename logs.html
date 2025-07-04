@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mission Logs – Time Authority</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="responsive.css">
+</head>
+<body>
+  <header class="dashboard-header">
+    <h1>📜 MISSION LOGS</h1>
+    <p class="subtext">Chronological Travel Records</p>
+  </header>
+
+<nav class="main-nav">
+  <div class="nav-container">
+    <div class="logo">⏳ Time Travel</div>
+    <button class="nav-toggle" aria-label="Toggle navigation">
+      ☰
+    </button>
+    <ul class="nav-links">
+      <li><a href="index.html" class="active">Dashboard</a></li>
+      <li><a href="logs.html">Mission Logs</a></li>
+      <li><a href="agents.html">Agents</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<script>
+const toggleBtn = document.querySelector(".nav-toggle");
+const navLinks = document.querySelector(".nav-links");
+
+toggleBtn.addEventListener("click", () => {
+  navLinks.classList.toggle("active");
+});
+
+</script>
+
+
+  <main class="dashboard-main">
+    <section class="logs-section">
+      <h2>🗂 Timeline Jump History</h2>
+      <table class="log-table">
+        <thead>
+          <tr>
+            <th>Mission ID</th>
+            <th>Agent</th>
+            <th>From Year</th>
+            <th>To Year</th>
+            <th>Status</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>#TX-001</td>
+            <td>Agent Nova</td>
+            <td>2025</td>
+            <td>3021</td>
+            <td><span class="status success">✅ Complete</span></td>
+          </tr>
+          <tr>
+            <td>#TX-002</td>
+            <td>Agent Vortex</td>
+            <td>1890</td>
+            <td>2099</td>
+            <td><span class="status failed">❌ Failed</span></td>
+          </tr>
+          <tr>
+            <td>#TX-003</td>
+            <td>Agent Echo</td>
+            <td>3015</td>
+            <td>2022</td>
+            <td><span class="status pending">⏳ Pending</span></td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+  </main>
+
+  <footer class="dashboard-footer">
+    <p>Time Authority © 2099 – All Jumps Monitored</p>
+  </footer>
+</body>
+</html>

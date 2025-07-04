@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact – Time Authority Secure Comm</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="responsive.css">
+</head>
+<body>
+  <header class="dashboard-header">
+    <h1>🔐 SECURE TRANSMISSION</h1>
+    <p class="subtext">Contact the Time Authority HQ</p>
+  </header>
+
+
+<nav class="main-nav">
+  <div class="nav-container">
+    <div class="logo">⏳ Time Travel</div>
+    <button class="nav-toggle" aria-label="Toggle navigation">
+      ☰
+    </button>
+    <ul class="nav-links">
+      <li><a href="index.html" class="active">Dashboard</a></li>
+      <li><a href="logs.html">Mission Logs</a></li>
+      <li><a href="agents.html">Agents</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<script>
+const toggleBtn = document.querySelector(".nav-toggle");
+const navLinks = document.querySelector(".nav-links");
+
+toggleBtn.addEventListener("click", () => {
+  navLinks.classList.toggle("active");
+});
+
+</script>
+
+
+  <main class="dashboard-main">
+    <section class="contact-section">
+      <h2>Send Encrypted Message</h2>
+      <form class="contact-form" action="#" method="POST">
+        <label for="agent-name">Agent Codename</label>
+        <input type="text" id="agent-name" name="agent-name" placeholder="Enter your codename" required />
+
+        <label for="message">Encrypted Message</label>
+        <textarea id="message" name="message" rows="6" placeholder="Type your message here..." required></textarea>
+
+        <button type="submit" class="travel-btn">TRANSMIT</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="dashboard-footer">
+    <p>Time Authority © 2099 – Transmission Secure</p>
+  </footer>
+</body>
+</html>
